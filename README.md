@@ -3,4 +3,3 @@
 
 Laborationer i kursen 1ik415
 
-asdfasdfasdf
