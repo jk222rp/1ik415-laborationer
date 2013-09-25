@@ -1,0 +1,27 @@
+#container
+{
+    background: #000;
+	width: 800px;
+	margin: auto;
+}
+
+#header
+{
+    background: #F16;
+    width: 800;
+}
+
+#navigation
+{
+    background: #FAF;
+    width: 200px;
+    float: left;
+}
+
+#content
+{
+    background: #F5A;
+    width: 580px;
+    float: left;
+    padding: 0 10px 50px 10px;
+}
