@@ -36,12 +36,37 @@
         <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
             
             <fieldset>
-                <legend></legend>
+            
+                <legend>Fyll i</legend>
                 
-                <label for=""></label>
+                <p><label for="text 1">Skriv nått</label>
+                <input placeholder="Skriv här" type="text" id="text 1" name="text 1"></p>
                 
-                <input placeholder="" type="" id="" name="">
+                <p><label for="mer text">Skriv mer:</label></o>
+                <p></p><textarea placeholder="Skriv här" rows="5" cols="20" id="mer text" name="mer text"></textarea></p>
+                
             </fieldset>
+            
+            <fieldset>
+                
+                <legend>Välj</legend>
+                
+                <label for="val 1"></label>
+                <p><select name="val 1">
+                    <option value="Inget" selected>Välj en...</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select></p>            
+ 
+                <p><label for="val 2">Välj en här också</label></p>
+                <p><input type="radio" name="val 2" value="1">1
+                <input type="radio" name="val 2" value="2">2
+                <input type="radio" name="val 2" value="3">3</p>
+                
+            </fieldset>
+            
+            <button type="submit">Skicka skiten</button>
         </form>
         
     </div>    
