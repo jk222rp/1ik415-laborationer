@@ -1,15 +1,67 @@
+body
+{
+    font-size: 1em;
+}    
+
+p
+{
+    font-size: 0.8em;
+    font-family: verdana, arial, sans-serif;
+}
+
+ul
+{
+    font-size: 0.8em;
+    font-family: verdana, arial, sans-serif;    
+}
+
+ol
+{
+    font-size: 0.8em;
+    font-family: verdana, arial, sans-serif;    
+}
+
+dl
+{
+    font-size: 0.8em;
+    font-family: verdana, arial, sans-serif;    
+}
+
+h1
+{
+    font-size: 2.1em;
+}
+
+h2
+{
+    font-size: 1.75em;
+}
+
+h3
+{
+    font-size: 1.5em;
+}
+
 #container
 {
 	width: 800px;
 	margin: auto;
 }
 
+#logotyp
+{
+    background: #123345;
+}
+
 #header
 {
-    /*background: #f2c2e8;*/
-    width: 780;
+    background-image: url('pics/logotyp.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 620;
     padding: 10px;
-    border-bottom: 2px solid #a10081;
+    padding-left: 160px;
+    border-bottom: 2px solid #824180;
 }
 
 #navigation
@@ -24,18 +76,59 @@
     width: 626px;
     float: left;
     padding: 0 10px 50px 10px;
-    border-left: 2px solid #a10081;
+    border-left: 2px solid #824180;
     margin-top: 10px;
 }
 
-
-/*a:link
+#content h2
 {
-    color: #a10081;
+    margin-top:20px;
+    margin-bottom:0;
+}
+
+#content h3
+{
+    margin-top:20px;
+    margin-bottom:0;    
+}
+
+#content p
+{
+    line-height: 120%;
+}
+
+#content ul, ol, dl
+{
+    line-height: 150%;
+}
+
+#content a:link
+{
+    color: #824180;
     text-decoration: none;
     font-weight: bold;
-}*/
+}
 
+#content a:visited
+{
+    color: #824180;
+    font-weight: bold;
+}
+
+#content a:focus
+{
+    text-decoration: underline;
+}
+
+#content a:hover
+{
+    color: #f2c2e8;
+}
+
+#content a:active
+{
+    color: #FFFFFF;
+}
 
 .nav
 {
@@ -43,7 +136,7 @@
     text-align: left;
     display: block;
 	line-height: 30px;
-    background-color: #a10081;
+    background-color: #824180;
     padding-left: 0;
 }
 
