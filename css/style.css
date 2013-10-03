@@ -1,56 +1,18 @@
-body
-{
-    font-size: 1em;
-}    
+/*text*/
+body {font-size: 1em;}    
 
-p
-{
-    font-size: 0.8em;
-    font-family: verdana, arial, sans-serif;
-}
+p, ul, ol, dl {font-size: 0.8em; font-family: verdana, arial, sans-serif;}
 
-ul
-{
-    font-size: 0.8em;
-    font-family: verdana, arial, sans-serif;    
-}
+h1 {font-size: 2.1em;}
 
-ol
-{
-    font-size: 0.8em;
-    font-family: verdana, arial, sans-serif;    
-}
+h2 {font-size: 1.75em;}
 
-dl
-{
-    font-size: 0.8em;
-    font-family: verdana, arial, sans-serif;    
-}
-
-h1
-{
-    font-size: 2.1em;
-}
-
-h2
-{
-    font-size: 1.75em;
-}
-
-h3
-{
-    font-size: 1.5em;
-}
+h3 {font-size: 1.5em;}
 
 #container
 {
 	width: 800px;
 	margin: auto;
-}
-
-#logotyp
-{
-    background: #123345;
 }
 
 #header
@@ -64,6 +26,7 @@ h3
     border-bottom: 2px solid #824180;
 }
 
+/*navigation start*/
 #navigation
 {
     width: 145px;
@@ -71,6 +34,48 @@ h3
     padding-right: 5px;
 }
 
+.nav
+{
+    list-style: none;
+    text-align: left;
+    display: block;
+	line-height: 30px;
+    background-color: #824180;
+    padding-left: 0;
+}
+
+/*navigation links*/
+.current
+{
+    font-weight: bolder;
+}
+
+.nav a:link, .nav a:visited
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid 2px white;
+    padding-left: 5px;
+}
+
+.nav a:focus
+{
+    text-decoration: underline;
+}
+
+.nav a:hover
+{
+    background-color: #f2c2e8;
+}
+
+.nav a:active
+{
+    background-color: white;
+}
+/*navigation end*/
+
+/*content start*/
 #content
 {
     width: 626px;
@@ -79,29 +84,26 @@ h3
     border-left: 2px solid #824180;
     margin-top: 10px;
 }
-
-#content h2
+ /*content titles*/
+#content h2, #content h3
 {
     margin-top:20px;
     margin-bottom:0;
 }
 
-#content h3
-{
-    margin-top:20px;
-    margin-bottom:0;    
-}
-
+/*content text*/
 #content p
 {
     line-height: 120%;
 }
 
-#content ul, ol, dl
+/*content lists*/
+#content ul, #content ol, #content dl
 {
     line-height: 150%;
 }
 
+/*content links*/
 #content a:link
 {
     color: #824180;
@@ -129,49 +131,63 @@ h3
 {
     color: #FFFFFF;
 }
+/*content end*/
 
-.nav
+/*footer start*/
+#footer
 {
-    list-style: none;
-    text-align: left;
-    display: block;
-	line-height: 30px;
-    background-color: #824180;
-    padding-left: 0;
+    width: 800;
+    text-align: right;
 }
 
-.current
+/*footer links*/
+#footer a:link
 {
-    font-weight: bolder;
-}
-
-.nav a:link, .nav a:visited, .nav a:hover, .nav a:active
-{
-    color: black;
+    color: #824180;
     text-decoration: none;
-    display: block;
-    border-bottom: solid 2px white;
-    padding-left: 5px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
 }
 
-.nav a:focus
+#footer a:visited
 {
-    color: black;
+    color: #824180;
+    font-weight: bold;
+}
+
+#footer a:focus
+{
     text-decoration: underline;
-    display: block;
-    border-bottom: solid 2px white;
-    padding-left: 5px;
 }
 
-.nav a:hover
+#footer a:hover
 {
-    background-color: #f2c2e8;
+    color: #f2c2e8;
 }
 
-.nav a:active
+#footer a:active
 {
-    background-color: white;
+    color: #FFFFFF;
 }
+/*footer end*/
+
+/*titles index*/
+.posts h3
+{
+    background: url('pics/rubriklogo.png') left center no-repeat #f2c2e8;
+    padding-left: 30px;
+    border-bottom: solid 1px #824180;
+}
+
+/*titles laborationer*/
+.labb h2, .labb h3
+{
+    border-bottom: solid 1px #824180;
+    display: inline;
+    line-height: 200%;
+}
+
+
 
 
 
