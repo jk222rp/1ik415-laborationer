@@ -172,7 +172,7 @@ h3 {font-size: 1.5em;}
 /*footer end*/
 
 /*titles index*/
-.posts h3
+.post h3
 {
     background: url('pics/rubriklogo.png') left center no-repeat #f2c2e8;
     padding-left: 30px;
@@ -187,8 +187,26 @@ h3 {font-size: 1.5em;}
     line-height: 200%;
 }
 
+/*post dates*/
+.post-footer
+{
+    text-align: right;
+    border-top: solid 1px #f2c2e8;
+    border-bottom: solid 1px #824180;
+}
 
+/*image and video position*/
+.right
+{
+    float: right;
+    margin: 5px 0 5px 0.5em;
+}
 
+.left
+{
+    float: left;
+    margin: 5px 0.5em 5px 0;
+}
 
 
 
