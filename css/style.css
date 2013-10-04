@@ -171,14 +171,6 @@ h3 {font-size: 1.5em;}
 }
 /*footer end*/
 
-/*titles index*/
-.post h3
-{
-    background: url('pics/rubriklogo.png') left center no-repeat #f2c2e8;
-    padding-left: 30px;
-    border-bottom: solid 1px #824180;
-}
-
 /*titles laborationer*/
 .labb h2, .labb h3
 {
@@ -187,27 +179,48 @@ h3 {font-size: 1.5em;}
     line-height: 200%;
 }
 
+/*posts start*/
+.post
+{
+    overflow-y: hidden;
+}
+
+/*post titles*/
+.post h3
+{
+    background: url('pics/rubriklogo.png') left center no-repeat #f2c2e8;
+    padding-left: 30px;
+    border-bottom: solid 1px #824180;
+}
+
 /*post dates*/
 .post-footer
 {
     text-align: right;
     border-top: solid 1px #f2c2e8;
     border-bottom: solid 1px #824180;
+    clear: both;
+    height: 1.1em;
+}
+
+.post-footer p
+{
+    margin: 2px;
 }
 
 /*image and video position*/
 .right
 {
     float: right;
-    margin: 5px 0 5px 0.5em;
+    margin: 10px 0 10px 0.5em;
 }
 
 .left
 {
     float: left;
-    margin: 5px 0.5em 5px 0;
+    margin: 10px 0.5em 10px 0;
 }
-
+/*posts end*/
 
 
 
