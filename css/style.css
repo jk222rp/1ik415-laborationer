@@ -1,6 +1,6 @@
-/*text*/
-body {font-size: 1em;}    
+body {font-size: 1em; background-color: #fff;}    
 
+/*text*/
 p, ul, ol, dl {font-size: 0.8em; font-family: verdana, arial, sans-serif;}
 
 h1 {font-size: 2.1em;}
@@ -11,20 +11,42 @@ h3 {font-size: 1.5em;}
 
 #container
 {
+    background-color: white;
 	width: 800px;
 	margin: auto;
+	border-left: solid 2px #95ab73;
+	border-right: solid 2px #c7e49a;
 }
 
+/*header start*/
 #header
 {
-    background-image: url('pics/logotyp.png');
-    background-position: left center;
+    background-image: url('pics/header.jpg');
     background-repeat: no-repeat;
-    width: 620;
+    width: 780px;
+    height: 218px;
     padding: 10px;
-    padding-left: 160px;
-    border-bottom: 2px solid #824180;
+    margin-top: -10px;
+    border-bottom: 2px solid #95ab73;
 }
+
+#header h1
+{
+    margin-right: 10px;
+    margin-top: 175px;
+}
+
+#header h2
+{
+    margin-right: -5px;
+}
+
+#header h1, #header h2
+{
+    text-align: right;
+    line-height: 30%;
+}
+/*header end*/
 
 /*navigation start*/
 #navigation
@@ -40,7 +62,7 @@ h3 {font-size: 1.5em;}
     text-align: left;
     display: block;
 	line-height: 30px;
-    background-color: #824180;
+    background-color: #95ab73;
     padding-left: 0;
 }
 
@@ -66,7 +88,7 @@ h3 {font-size: 1.5em;}
 
 .nav a:hover
 {
-    background-color: #f2c2e8;
+    background-color: #c7e49a;
 }
 
 .nav a:active
@@ -78,11 +100,10 @@ h3 {font-size: 1.5em;}
 /*content start*/
 #content
 {
-    width: 626px;
+    width: 628px;
     float: left;
-    padding: 0 10px 50px 10px;
-    border-left: 2px solid #824180;
-    margin-top: 10px;
+    padding: 0 10px 20px 10px;
+    border-left: 2px solid #c7e49a;
 }
  /*content titles*/
 #content h2, #content h3
@@ -106,14 +127,14 @@ h3 {font-size: 1.5em;}
 /*content links*/
 #content a:link
 {
-    color: #824180;
+    color: #95ab73;
     text-decoration: none;
     font-weight: bold;
 }
 
 #content a:visited
 {
-    color: #824180;
+    color: #95ab73;
     font-weight: bold;
 }
 
@@ -124,7 +145,7 @@ h3 {font-size: 1.5em;}
 
 #content a:hover
 {
-    color: #f2c2e8;
+    color: #c7e49a;
 }
 
 #content a:active
@@ -136,14 +157,19 @@ h3 {font-size: 1.5em;}
 /*footer start*/
 #footer
 {
-    width: 800;
+    width: 790px;
+    background: #c7e49a;
     text-align: right;
+    padding-right: 10px;
+    display: block;
+    clear: both;
 }
 
 /*footer links*/
 #footer a:link
 {
-    color: #824180;
+    color: #95ab73;
+    display: block;
     text-decoration: none;
     font-family: arial, sans-serif;
     font-weight: bold;
@@ -151,7 +177,7 @@ h3 {font-size: 1.5em;}
 
 #footer a:visited
 {
-    color: #824180;
+    color: #95ab73;
     font-weight: bold;
 }
 
@@ -162,19 +188,19 @@ h3 {font-size: 1.5em;}
 
 #footer a:hover
 {
-    color: #f2c2e8;
+    color: #ffffff;
 }
 
 #footer a:active
 {
-    color: #FFFFFF;
+    color: #c7e49a;
 }
 /*footer end*/
 
 /*titles laborationer*/
 .labb h2, .labb h3
 {
-    border-bottom: solid 1px #824180;
+    border-bottom: solid 1px #95ab73;
     display: inline;
     line-height: 200%;
 }
@@ -188,17 +214,17 @@ h3 {font-size: 1.5em;}
 /*post titles*/
 .post h3
 {
-    background: url('pics/rubriklogo.png') left center no-repeat #f2c2e8;
+    background: url('pics/rubriklogo.png') left center no-repeat #c7e49a;
     padding-left: 30px;
-    border-bottom: solid 1px #824180;
+    border-bottom: solid 1px #95ab73;
 }
 
 /*post dates*/
 .post-footer
 {
     text-align: right;
-    border-top: solid 1px #f2c2e8;
-    border-bottom: solid 1px #824180;
+    border-top: solid 1px #c7e49a;
+    border-bottom: solid 1px #95ab73;
     clear: both;
     height: 1.1em;
 }
@@ -208,7 +234,7 @@ h3 {font-size: 1.5em;}
     margin: 2px;
 }
 
-/*image and video position*/
+/*images and videos*/
 .right
 {
     float: right;
@@ -220,7 +246,70 @@ h3 {font-size: 1.5em;}
     float: left;
     margin: 10px 0.5em 10px 0;
 }
+
+.rightBorder
+{
+    float: right;
+    margin: 10px 0 10px 0.5em;
+    border: outset 5px #c7e49a;
+}
+
+.leftBorder
+{
+    float: left;
+    margin: 10px 0.5em 10px 0;
+    border: outset 5px #c7e49a;
+}
 /*posts end*/
+
+/*table start*/
+table
+{
+    border: outset 5px #c7e49a;
+    text-align: left;
+}
+
+th
+{
+    background-color: #95ab73;
+}
+
+.tbody
+{
+    background-color: #c7e49a;
+}
+
+.tbody td
+{
+    border: solid 1px #95ab73;
+    font-size: 0.8em;
+    line-height: 150%;
+    font-family: verdana, arial, sans-serif;
+}
+
+.tfoot
+{
+    border: solid 1px #c7e49a;
+    text-align: center;
+}
+
+/*table end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
