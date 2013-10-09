@@ -1,7 +1,15 @@
-body {font-size: 1em; background-color: #fff;}    
+/*
+colors used:
+darker green - #95ab73
+lighter green - #c7e49a
+background - white
+texts - black
+*/
+
+body {font-size: 100%; background-color: #fff;}    
 
 /*text*/
-p, ul, ol, dl {font-size: 0.8em; font-family: verdana, arial, sans-serif;}
+p, ul, ol, dl {font-size: 0.8em; font-family: verdana, arial, sans-serif; color: #000;}
 
 h1 {font-size: 2.1em;}
 
@@ -11,9 +19,10 @@ h3 {font-size: 1.5em;}
 
 #container
 {
-    background-color: white;
-	width: 800px;
-	margin: auto;
+	max-width: 800px;
+	min-width: 500px;
+	margin: -10px auto -10px auto;
+	overflow: auto;
 	border-left: solid 2px #95ab73;
 	border-right: solid 2px #c7e49a;
 }
@@ -23,11 +32,13 @@ h3 {font-size: 1.5em;}
 {
     background-image: url('pics/header.jpg');
     background-repeat: no-repeat;
-    width: 780px;
-    height: 218px;
+    /*background-size: contain;*/
+    max-width: 780px;
+    max-height: 218px;
     padding: 10px;
     margin-top: -10px;
     border-bottom: 2px solid #95ab73;
+    clear: both;
 }
 
 #header h1
@@ -52,12 +63,15 @@ h3 {font-size: 1.5em;}
 #navigation
 {
     width: 145px;
+    margin-right: -150px;
     float: left;
     padding-right: 5px;
+    position: relative;
 }
 
 .nav
 {
+    width: 145px;
     list-style: none;
     text-align: left;
     display: block;
@@ -97,12 +111,19 @@ h3 {font-size: 1.5em;}
 }
 /*navigation end*/
 
+/*wrapper*/
+#wrapper
+{
+    width: 100%;
+    float: left;
+}
+
 /*content start*/
 #content
 {
-    width: 628px;
-    float: left;
-    padding: 0 10px 20px 10px;
+    margin-left: 150px;
+    margin-right: 10px;
+    padding: 0 0 20px 10px;
     border-left: 2px solid #c7e49a;
 }
  /*content titles*/
@@ -115,7 +136,7 @@ h3 {font-size: 1.5em;}
 /*content text*/
 #content p
 {
-    line-height: 120%;
+    line-height: 140%;
 }
 
 /*content lists*/
@@ -157,7 +178,7 @@ h3 {font-size: 1.5em;}
 /*footer start*/
 #footer
 {
-    width: 790px;
+    max-width: 790px;
     background: #c7e49a;
     text-align: right;
     padding-right: 10px;
@@ -249,6 +270,7 @@ h3 {font-size: 1.5em;}
 
 .rightBorder
 {
+    background-color: #123414;
     float: right;
     margin: 10px 0 10px 0.5em;
     border: outset 5px #c7e49a;
@@ -292,12 +314,77 @@ th
     border: solid 1px #c7e49a;
     text-align: center;
 }
-
 /*table end*/
 
+/*form start*/
 
+/*form1*/
+#form1
+{
+    border: outset 3px #c7e49a;
+    margin-top: 10px;
+}
 
+#form1 label
+{
+    width: 75px;
+    font-family: verdana, arial, sans-serif;
+    font-size: 0.8em;
+    text-align: right;
+    padding: 0 5px 5px 0;
+    display: block;
+    float: left;
+    clear: left;
+}
 
+#form1 input, #form1 textarea
+{
+    border: solid 1px #95ab73;
+    margin-bottom: 5px;
+}
+
+#form1 input
+{
+    width: 200px;
+}
+
+#form1 textarea
+{
+    width: 500px;
+    height: 200px;
+}
+
+/*form2*/
+#form2
+{
+    border: outset 3px #c7e49a;
+    margin: 10px 0 10px 0;
+}
+
+#form2 label
+{
+    width: auto;
+    font-family: verdana, arial, sans-serif;
+    font-size: 0.8em;
+    text-align: left;
+    margin: 5px 5px -15px 0;
+    line-height: 100%;
+    display: block;
+    float: left;
+    clear: left;
+}
+
+#form2 select
+{
+    margin-bottom: 15px;
+    border: solid 1px #95ab73;
+}
+
+#form2 input
+{
+    margin-top: 10px;
+}
+/*form end*/
 
 
 
