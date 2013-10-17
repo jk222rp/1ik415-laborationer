@@ -69,14 +69,70 @@ h3 {font-size: 1.5em;}
     position: relative;
 }
 
-.nav
+ /*spite start*/
+.sprite
 {
-    width: 145px;
-    list-style: none;
-    text-align: left;
+    width: 140px;
+    height: 24px;
     display: block;
-	line-height: 30px;
+    background-image: url('pics/sprite.png');
     background-color: #95ab73;
+    float: left;
+    clear: left;
+    background-repeat: no-repeat;
+}
+
+.sprite span
+{
+    display: block;
+    margin-left: 25px;
+}
+
+#startIcon
+{
+    background-position: 0 -48px;
+}
+
+#startIcon:hover, #startIcon:focus
+{
+    background-position: 0 0;
+}
+
+#labIcon
+{
+    background-position: 0 -144px;
+}
+
+#labIcon:hover, #labIcon:focus
+{
+    background-position: 0 -96px;
+}
+
+#presentationIcon
+{
+    background-position: 0 -240px;
+}
+
+#presentationIcon:hover, #presentationIcon:focus
+{
+    background-position: 0 -192px;
+}
+
+#contactIcon
+{
+    background-position: 0 -336px;
+}
+
+#contactIcon:hover, #contactIcon:focus
+{
+    background-position: 0 -288px;
+}
+/*spite end*/
+
+#navigation ul
+{
+    list-style: none;
+	line-height: 25px;
     padding-left: 0;
 }
 
@@ -86,7 +142,7 @@ h3 {font-size: 1.5em;}
     font-weight: bolder;
 }
 
-.nav a:link, .nav a:visited
+#navigation a
 {
     color: black;
     text-decoration: none;
@@ -95,17 +151,12 @@ h3 {font-size: 1.5em;}
     padding-left: 5px;
 }
 
-.nav a:focus
-{
-    text-decoration: underline;
-}
-
-.nav a:hover
+#navigation a:focus, #navigation a:hover
 {
     background-color: #c7e49a;
 }
 
-.nav a:active
+#navigation a:active
 {
     background-color: white;
 }
